@@ -1,0 +1,56 @@
+
+<div>
+  <div  class="calculator">
+  <div style="font-size : 20px" class="screen" >
+{{input}}
+<br>
+<h1 style="margin:auto;">{{result}}</h1>
+  </div>
+ 
+  <div class="button">
+     <button style="font-size : 20px;height:58px;width:100px"(click)="getAnswer2('%')" value="%" >%</button>
+     <button style="font-size : 20px;height:58px;width:100px"(click)="allClear()" value="CE">CE</button>
+     <button style="font-size : 20px;height:58px;width:100px"(click)="allClear()" value="C">C</button>
+     <button style="font-size : 20px;height:58px;width:100px"(click)="clear()" value="x">&larr;x</button>
+   
+  </div>
+
+<div class="button" >
+    <button style="font-size : 20px;height:58px;width:100px"(click)="getAnswer2('/')" value="1/X">1/X</button>
+    <button style="font-size : 20px;height:58px;width:100px"(click)="getAnswer2('²')" value="X^2">X<sup>2</sup></button>
+    <button style="font-size : 20px;height:58px;width:100px"(click)="getAnswer2('√')" value="root X">&#8730;x</button>
+    <button style="font-size : 20px;height:58px;width:100px"(click)="press('÷')" value="/">÷</button>
+</div>
+
+<div class="button" >
+  <button style="font-size : 20px;height:58px;width:100px"(click)="press('7')" value="7">7</button>
+  <button style="font-size : 20px;height:58px;width:100px"(click)="press('8')" value="8">8</button>
+  <button style="font-size : 20px;height:58px;width:100px"(click)="press('9')" value="9">9</button>
+  <button style="font-size : 20px;height:58px;width:100px"(click)="press('×')" value="*">×</button>
+</div>
+
+<div class="button" >
+  <button style="font-size : 20px;height:58px;width:100px"(click)="press('4')" value="4">4</button>
+  <button style="font-size : 20px;height:58px;width:100px"(click)="press('5')" value="5">5</button>
+  <button style="font-size : 20px;height:58px;width:100px"(click)="press('6')" value="6">6</button>
+  <button style="font-size : 20px;height:58px;width:100px"(click)="press('-')" value="-">-</button>
+</div>
+
+<div class="button" >
+  <button style="font-size : 20px;height:58px;width:100px"(click)="press('1')" value="1">1</button>
+  <button style="font-size : 20px;height:58px;width:100px"(click)="press('2')" value="2">2</button>
+  <button style="font-size : 20px;height:58px;width:100px"(click)="press('3')" value="3">3</button>
+  <button style="font-size : 20px;height:58px;width:100px"(click)="press('+')" value="+">+</button>
+</div>
+
+<div class="button" >
+  <button style="font-size : 20px;height:58px;width:100px"(click)="getAnswer2('~')" value="+/-">+/-</button>
+  <button style="font-size : 20px;height:58px;width:100px"(click)="press('0')" value="0">0</button>
+  <button style="font-size : 20px;height:58px;width:100px"(click)="press('.')" value="."> . </button>
+  <button style="font-size : 20px;background:rgba(255, 0, 170, 0.445);height:58px;width:100px"(click)= "getAnswer()" value="=">=</button>
+</div>
+</div>
+  <br>
+  
+ 
+</div>
